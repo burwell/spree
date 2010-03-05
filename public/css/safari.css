@@ -1,0 +1,6 @@
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.leftnav { margin-left:-310px; }
+	.addtocartmargin { padding-top:13px; }
+	#emailbox1 input {margin:-2px 0px 10px 0px;padding:0px 0px 0px 15px;outline:none;}
+	#emailbox2 input {margin:-2px 0px 10px 0px;padding:0px 0px 0px 15px;outline:none;}
+}

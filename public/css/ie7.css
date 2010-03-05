@@ -1,0 +1,24 @@
+.foreground { position: inherit; top: 0; left: 0; z-index: 200; height: 768px; overflow: hidden; }
+
+#leftnav { text-align:left; position: relative; }
+.bigplus { background: url('/images/bigplus.jpg'); background-repeat: no-repeat; width: 70px; height: 68px; margin-left: 27px; position:relative; z-index: 10;}
+.navitems { margin-left: 65px; margin-top: -30px; margin-bottom: -30px; position: relative; z-index: 20;}
+.navitems ul, .navitems li { line-height: 18px; font-size: 12px; list-style-type: none; position: relative; }
+.smallplus { background: url('/images/smallplus.jpg'); background-repeat: no-repeat; width: 41px; height: 44px; margin-left: 45px; position:relative; z-index: 10;}
+.shoppingbag { margin-left: 48px; width: 182px; height: 96px; }
+.checkout { margin-left: 48px; width: 128px; height: 105px; }
+
+
+#products #dragarea { width: 762px; overflow: hidden; background: url('/images/bgrepeater.png'); background-repeat: repeat-y; position: relative;}
+#slidearea #track { float: left; width: 275px; height: 23px; margin: 5px 20px 0px 0px; background: url('/images/track.jpg'); background-repeat: no-repeat; position:relative;}
+#slidearea #handle { width: 39px; height: 23px; cursor: move; background: url('/images/handle.png'); background-repeat: no-repeat; float:left; position: relative;}
+
+#navigation .navstyles #verticallist { position: relative; z-index: 400; margin: 0; padding: 0; height: 1em; text-align: left;}
+
+#description { margin-left: 30px; width: 420px; float: left; margin-right: 50px; }
+
+#facebox { position: absolute; top: 0; left: 0; z-index: 10000; text-align: left; width: 625px; margin-left: 0px;}
+
+#descriptionarea {width: 430px;}
+#descriptionarea .description { width: 230px;}
+#emaillabel {margin-top:-16px;}

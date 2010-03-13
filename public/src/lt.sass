@@ -1,3 +1,404 @@
+#container
+	background: url('/images/ltbgimg.jpg') no-repeat
+	width: 1030px
+
+.header
+	height: 160px
+
+.logo
+	margin-left: 122px
+	float: left
+	
+.checkoutlinks
+	float: left
+	width: 200px
+	margin-left: 160px
+	.cartitems
+		width: 48px
+		height: 71px
+		float: left
+		background: url('/images/ltshoppingcartqty.png') no-repeat
+		.cartmargin
+			margin: 34px 0px 0px 72px
+	.shoppingbag
+		width: 118px
+		float: left
+		
+#left
+	width: 300px
+	float: left
+	#shape
+		margin-left: 39px
+		margin-top: 60px
+		float: left
+		width: 86px
+		height: 116px
+		background: url('/images/ltshape.jpg') no-repeat
+	#navlinks
+		float: left
+		width: 155px
+		margin-top: 115px
+		text-align: left
+		margin-bottom: 100px
+		ul
+			list-style-type: none
+			display: block
+			margin: 0
+			padding: 0
+		li
+			padding: 2px 0px 2px 5px
+		a
+			font-size: 11px
+			color: #999999
+			font-family: Helvetica, Arial
+			
+#emailarea
+	clear: both
+	text-align: left
+	margin-left: 110px
+	.padding
+		margin-left: 10px
+	.nameinput
+		background: url('/images/ltemailnametextbox.jpg') no-repeat
+		height: 25px
+		width: 131px
+		input
+			margin: 4px 0px 0px 3px
+			width: 120px
+			border: 0
+			padding: 0
+	.emailinput
+		background: url('/images/ltemailtextbox.jpg') no-repeat
+		height: 28px
+		width: 131px
+		input
+			margin: 4px 0px 0px 3px
+			border: 0
+			padding: 0
+			width: 120px
+	.submit
+		margin-left: 75px
+		margin-top: -30px
+
+#right
+	width: 692px
+	float: left
+	text-align: left
+	margin-top: 114px
+	
+.arealabel
+	width: 23px
+	float: left
+	height: 399px
+	
+.areabg
+	width: 669px
+	height: 399px
+	background: url('/images/ltbgrepeater.png') repeat-y
+
+.innerproducts
+	width: 669px
+	.row
+		height: 340px
+		.product
+			width: 300px
+			height: 347px
+			float: left
+			.image
+				width: 240px
+				height: 240px
+				margin: 10px 30px 0px 30px
+			.name
+				width: 240px
+				height: 27px
+				text-align: center
+				margin: 0px auto
+				font-size: 10px
+				text-transform: uppercase
+				line-height: 14px
+				font-family: Georgia
+			.buttonarea
+				width: 240px
+				height: 61px
+				.button
+					width: 56px
+					height: 48px
+					background: url('/images/ltaddbutton.png') no-repeat
+					margin-left: 117px
+					padding-top: 13px
+					padding-left: 5px
+					cursor: pointer
+					.buttontext
+						background-color: #ccff99
+						border: 0
+						text-align: center
+						font-family: Georgia
+						color: #ff66cc
+						width: 49px
+						cursor: pointer
+						
+.scroller
+	width: 669px
+	height: 27px
+	.scrollermargin
+		margin-left: 215px
+		.scrollbutton
+			float: left
+			width: 13px
+			height: 13px
+			margin-top: 3px
+			
+.track
+	float: left
+	width: 275px
+	height: 23px
+	margin: 0px 10px
+	background: url('/images/lttrack.jpg') no-repeat
+	
+.handle
+	width: 39px
+	height: 23px
+	cursor: move
+	background: url('/images/lthandle.png') no-repeat
+	
+#navigation
+	width: 630px
+	height: 25px
+	font-family: Helvetica
+	font-size: 10px
+	.listmargin
+		margin: 7px 0px 0px 27px
+	#verticallist
+		position: absolute
+		z-index: 400
+		margin: 0
+		padding: 0
+		overflow: visible
+		li
+			list-style: none
+			float: left
+			a
+				display: block
+				padding: 1px 5px
+				color: #000
+				text-decoration: none
+				text-transform: lowercase
+			ul
+				display: none
+				width: 15em /* Width to help Opera out */
+		li:hover 
+			ul
+				display: block
+				position: absolute
+				margin: 5px 0px 0px 0px
+				padding: 0
+				color: #ff00cc
+				background-color: #ffffff
+			li
+				float: none
+				a
+					color: #000
+		li
+			li
+				a:hover, #navigation #verticallist li a:hover
+					color: #ff00cc
+
+.storelocatorbg
+	width: 669px
+	background: url('/images/ltbgrepeater.png') repeat-y
+	
+#store_locator
+	width: 669px
+	background: url('/images/ltbgrepeater.png') repeat-y
+	.padding
+		padding: 10px 10px 10px 18px
+	.bottommargin
+		margin-bottom: 11px
+	.label
+		width: 72px
+		height: 34px
+		float: left
+	.addressinput
+		width: 300px
+		height: 34px
+		float: left
+		background: url('/images/ltaddresstextbox.png') no-repeat
+		input
+			width: 285px
+			border: 0
+			padding: 0
+			margin: 11px 0px 0px 5px
+	.within
+		width: 72px
+		height: 39px
+		float: left
+	.withinselect
+		width: 60px
+		float: left
+		margin-top: 6px
+	.miles
+		width: 50px
+		height: 39px
+		float: left
+	.go
+		width: 40px
+		height: 39px
+		float: left
+		margin-left: 10px
+	.mapborder
+		width: 470px
+		height: 471px
+		background: url('/images/ltmapbox.png') no-repeat
+		margin-right: 10px
+		float: left
+	.locations
+		width: 160px
+		float: left
+		.listheader
+			font-size: 12px
+			text-transform: uppercase
+		.list
+			border-bottom: 1px solid #000000
+			margin-bottom: 10px
+			padding: 10px 10px 10px 0px
+			font-family: Helvetica
+			font-size: 10px
+			line-height: 14px
+			.name
+				color: #ff66cc
+
+#account_login
+	.centering
+		text-align: center
+	.topmargin
+		margin-top: 60px
+	.inputarea
+		margin-left: 145px
+		margin-bottom: 10px
+	.label
+		width: 75px
+		float: left
+	.emailinput
+		width: 209px
+		height: 34px
+		float: left
+		background: url('/images/ltaccountemailinput.png') no-repeat
+		input
+			padding: 0
+			margin: 11px 0px 0px 0px
+			width: 190px
+			border: 0
+	.passwordinput
+		width: 209px
+		height: 34px
+		float: left
+		background: url('/images/ltaccountpasswordinput.png') no-repeat
+		input
+			padding: 0
+			margin: 11px 0px 0px 0px
+			width: 190px
+			border: 0
+	.links
+		margin-left: 220px
+		margin-bottom: 10px
+		.checkbox
+			width: 20px
+			float: left
+		.checkboxlabel
+			width: 100px
+			float: left
+			margin-top: 3px
+		.checkboxtext
+			font-family: Georgia
+			font-size: 12px
+		.submit
+			width: 100px
+			float: left
+			margin-top: 2px
+	a:link
+		font-size: 10px
+		font-style: italic
+		font-family: Georgia
+		color: #000000
+	a:visited
+		color: #000000
+	a:hover
+		color: #ff66cc
+	a:active
+		color: #ff66cc
+
+#contact_us
+	.left
+		margin-top: 60px
+		float: left
+		width: 240px
+		border-right: 1px solid #cccccc
+		height: 269px
+		text-align: center
+		.topmargin
+			margin-top: 75px
+	.right
+		width: 400px
+		float: left
+		margin-top: 30px
+		.bottommargin
+			margin-bottom: 12px
+		.label
+			float: left
+			width: 87px
+		.nameinput
+			float: left
+			width: 157px
+			height: 37px
+			background: url('/images/ltcontactnameinput.png') no-repeat
+			input
+				padding: 0
+				width: 140px
+				margin: 12px 0px 0px 10px
+				border: 0
+		.namerequired
+			float: left
+			width: 20px
+			height: 33px
+		.emailinput
+			float: left
+			width: 157px
+			height: 37px
+			background: url('/images/ltcontactemailinput.png') no-repeat
+			input
+				padding: 0
+				width: 140px
+				margin: 12px 0px 0px 10px
+				border: 0
+		.emailrequired
+			float: left
+			width: 20px
+			height: 28px
+		.orderinput
+			float: left
+			width: 157px
+			height: 37px
+			background: url('/images/ltcontactorderinput.png') no-repeat
+			input
+				padding: 0
+				width: 140px
+				margin: 12px 0px 0px 10px
+				border: 0
+		.commenttextarea
+			float: left
+			width: 305px
+			height: 121px
+			background: url('/images/ltcontactcommenttext.png') no-repeat
+			textarea
+				height: 95px
+				margin: 10px 0px 0px 12px
+				padding: 0
+				width: 282px
+				border: 0
+		.sendbutton
+			float: left
+			width: 55px
+			height: 56px
 
 
 #facebox

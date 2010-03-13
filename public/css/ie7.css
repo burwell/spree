@@ -1,9 +1,11 @@
 #emailarea {clear:both;text-align:left;margin-left:110px;}
-#emailarea .emailpadding {margin-left:10px;}
-#emailarea .emailpadding .emailnameinputbg {background:url('/images/ltemailnametextbox.jpg') no-repeat;height:25px;width:131px;margin-top:-3px;}
-#emailarea .emailpadding .emailnameinput {margin:3px 0px 0px 0px;width:115px;border:0;padding:0;}
-#emailarea .emailpadding .emailinputbg {background:url('/images/ltemailtextbox.jpg') no-repeat;height:28px;width:131px;}
-#emailarea .emailpadding .emailinput {margin:3px 0px 0px 0px;border:0;padding:0;width:115px;}
-#emailarea .emailpadding .emailsubmit {margin-left:75px;margin-top:-30px;}
+#emailarea .nameinput { background: url('/images/ltemailnametextbox.jpg') no-repeat; height: 25px; width: 131px; margin-top: -3px;}
+#emailarea .nameinput input { margin: 3px 0px 0px 0px; width: 115px; border: 0; padding: 0; }
+#emailarea .emailinput input { margin: 3px 0px 0px 0px; border: 0; padding: 0; width: 115px; }
+
+
 .arealabel {width:23px;float:left;height:399px;}
 .areabg {width:669px;height:397px;background:url('/images/ltbgrepeater.png') repeat-y;}
+
+.innerproducts .row .product .buttonarea .button { width: 56px; height: 48px; background: url('/images/ltaddbutton.png') no-repeat; margin-left: 117px; padding-top: 13px; padding-left: 5px; cursor: pointer; }
+.innerproducts .row .product .buttonarea .button .buttontext { background-color: #ccff99; border: 0; text-align: center; font-family: Georgia; color: #ff66cc; width: 47px; cursor: pointer; margin-left:-117px; font-size:10px;}

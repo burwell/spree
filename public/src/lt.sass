@@ -19,7 +19,11 @@
 		float: left
 		background: url('/images/ltshoppingcartqty.png') no-repeat
 		.cartmargin
-			margin: 34px 0px 0px 72px
+			margin: 24px 0px 0px 5px
+			height: 40px
+			.qtyposition
+				text-align: center
+				padding-top: 10px
 	.shoppingbag
 		width: 118px
 		float: left
@@ -99,43 +103,30 @@
 .innerproducts
 	width: 669px
 	.row
-		height: 340px
+		height: 372px
 		.product
 			width: 300px
-			height: 347px
+			height: 372px
 			float: left
 			.image
 				width: 240px
 				height: 240px
-				margin: 10px 30px 0px 30px
-			.name
-				width: 240px
-				height: 27px
-				text-align: center
-				margin: 0px auto
-				font-size: 10px
-				text-transform: uppercase
-				line-height: 14px
-				font-family: Georgia
-			.buttonarea
-				width: 240px
-				height: 61px
+				margin: 30px 30px 0px 40px
+			.description
+				padding: 0px 35px
+				.title
+					height: 92px
+					width: 150px
+					float: left
+					font-size: 12px
+					color: #ff66cc
+					text-transform: lowercase
+					font-family: Helvetica
+					margin-right: 10px
 				.button
-					width: 56px
-					height: 48px
-					background: url('/images/ltaddbutton.png') no-repeat
-					margin-left: 117px
-					padding-top: 13px
-					padding-left: 5px
-					cursor: pointer
-					.buttontext
-						background-color: #ccff99
-						border: 0
-						text-align: center
-						font-family: Georgia
-						color: #ff66cc
-						width: 49px
-						cursor: pointer
+					width: 69px
+					height: 69px
+					float: left
 						
 .scroller
 	width: 669px
@@ -202,6 +193,28 @@
 			li
 				a:hover, #navigation #verticallist li a:hover
 					color: #ff00cc
+
+#mission
+	.image
+		width: 308px
+		height: 399px
+		float: left
+	.missiontext
+		width: 330px
+		height: 399px
+		float: left
+		text-align: center
+		.copy
+			font-size: 10px
+			font-family: Helvetica
+			color: #33ccff
+			line-height: 14px
+			width: 272px
+			margin: 10px auto 0px auto
+			.pink
+				color: #ff66cc
+			.small
+				font-size: 8px
 
 .storelocatorbg
 	width: 669px
@@ -422,7 +435,7 @@
 	.prev
 		background: url(/images/facebox/prev.png)
 	.close
-		background: url('/images/facebox/closelabel.gif')
+		background: url('/images/facebox/ltcloselabel.png')
 		background-repeat: no-repeat
 		float: right
 		display: block
@@ -465,7 +478,63 @@
 		height: 1px
 		width: 1px
 		padding: 0
-
+	.description
+		width: 380px
+		margin-left: 50px
+		float: left
+		.title
+			float: left
+			width: 345px
+			margin-bottom: 5px
+			font-size: 13px
+			font-family: Helvetica
+			font-weight: normal
+			text-transform: uppercase
+			color: #666666
+		.price
+			float: right
+			width: 20px
+			color: #ff66cc
+			font-family: Helvetica
+			margin-right: 10px
+		.productdescription
+			margin-top: 5px
+			font-size: 10px
+			font-family: Helvetica
+			color: #666666
+		.properties
+			font-size: 10px
+			font-family: Helvetica
+			color: #666666
+	#faceboxfunctions
+		width: 105px
+		float: left
+		margin-left: 85px
+		.functionsfonts
+			color: #ff66cc
+			font-size: 14px
+			.quantity
+				float: left
+				width: 30px
+				margin-top: 5px
+				font-family: Helvetica
+				font-size: 12px				
+			.quantityinput
+				float: left
+				width: 44px
+				background: url('/images/facebox/ltfaceboxqty.png') no-repeat
+				height: 32px
+				input
+					font-family: Helvetica
+					width: 35px
+					border: 0px
+					padding: 0px
+					margin: 10px 0px 0px 3px
+					color: #ff66cc
+					text-align: center
+		.addbutton
+			margin-left: 10px
+		
 #facebox_overlay
 	position: fixed
 	top: 0px

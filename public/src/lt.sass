@@ -1,7 +1,7 @@
 =sitefont1
-	font-family: Arial
+	font-family: 'Trebuchet MS'
 =sitefont2
-	font-family: Arial
+	font-family: 'Trebuchet MS'
 =smallfont
 	font-size: 11px
 =mediumfont
@@ -14,48 +14,29 @@
 	color: #666666
 =black
 	color: #000000
-=emailareainput			
+=emailareainput
 	margin: 4px 0px 0px 3px
 	width: 120px
 	border: 0
 	padding: 0
-	
+ 
 #container
 	background: url('/images/ltbgimg.jpg') no-repeat
 	width: 1030px
 
 .header
-	height: 180px
+	height: 160px
 
 .logo
 	margin-left: 122px
 	float: left
-	
-.checkoutlinks
-	float: left
-	width: 200px
-	margin-left: 115px
-	.cartitems
-		width: 48px
-		height: 71px
-		float: left
-		background: url('/images/ltshoppingcartqty.png') no-repeat
-		.cartmargin
-			margin: 24px 0px 0px 5px
-			height: 40px
-			.qtyposition
-				text-align: center
-				padding-top: 10px
-	.shoppingbag
-		width: 118px
-		float: left
-		
+
 #left
 	width: 300px
 	float: left
 	#shape
 		margin-left: 39px
-		margin-top: 30px
+		margin-top: 60px
 		float: left
 		width: 86px
 		height: 116px
@@ -64,11 +45,14 @@
 		+sitefont1
 		float: left
 		width: 155px
-		margin-top: 85px
+		margin-top: 115px
 		text-align: left
 		+smallfont
 		text-transform: lowercase
-		margin-bottom: 75px
+		margin-bottom: 100px
+		#categorylinks
+			margin-top: 7px
+			margin-bottom: 15px
 		ul
 			list-style-type: none
 			display: block
@@ -84,29 +68,46 @@
 			+sitecolor2
 		a:active
 			+sitecolor1
-		#categorylinks
-			margin-top: 7px
-			padding-bottom: 15px
 		.sublist
-			margin: -4px 0px -4px 13px
+			margin: -4px 0px -4px 10px
 			font-size: 9px
-			
-#emailarea
+
+.checkoutlinks
+	clear: both
 	text-align: left
-	margin-left: 150px
-	float: left
+	margin-left: 110px
+	margin-bottom: 15px
+	.cartitems
+		width: 48px
+		height: 71px
+		float: left
+		background: url('/images/ltshoppingcartqty.png') no-repeat
+		.cartmargin
+			margin: 24px 0px 0px 5px
+			height: 40px
+			.qtyposition
+				text-align: center
+				padding-top: 10px
+	.shoppingbag
+		width: 118px
+		float: left
+
+#emailarea
+	clear: both
+	text-align: left
+	margin-left: 110px
 	.padding
 		margin-left: 10px
 	.nameinput
-		background: url('/images/ltemailnametextbox.png') no-repeat
+		background: url('/images/ltemailnametextbox.jpg') no-repeat
 		height: 25px
-		width: 134px
+		width: 131px
 		input
 			+emailareainput
 	.emailinput
-		background: url('/images/ltemailtextbox.png') no-repeat
+		background: url('/images/ltemailtextbox.jpg') no-repeat
 		height: 28px
-		width: 134px
+		width: 131px
 		input
 			+emailareainput
 	.submit
@@ -117,13 +118,13 @@
 	width: 692px
 	float: left
 	text-align: left
-	margin-top: 84px
-	
+	margin-top: 114px
+
 .arealabel
 	width: 23px
 	float: left
 	height: 399px
-	
+
 .areabg
 	width: 669px
 	height: 399px
@@ -133,55 +134,55 @@
 	width: 669px
 	.row
 		height: 372px
-		margin-left: 40px
+		margin-left: 30px
 		.product
 			width: 300px
 			height: 372px
 			float: left
 			.image
 				width: 240px
-				height: 260px
+				height: 240px
+				text-align: center
 			.title
-				text-align: left
-				width: 240px
+				margin-top: 15px
+				text-align: center
+				height: 45px
 				float: left
+				text-transform: lowercase
+				margin-right: 10px
 				+mediumfont
 				+sitecolor1
 				+sitefont1
-				text-transform: lowercase
-				margin-top: 25px
-				margin-bottom: 10px
 			.button
-				text-align: left
-				margin-top: 20px
+				margin-left: 100px
 				width: 66px
-				height: 67px
-						
+				height: 66px
+				float: left
+
 .scroller
-	width: 669px
+	width: 669px	
 	height: 27px
 	.scrollermargin
 		margin-left: 215px
 		.scrollbutton
 			float: left
-			width: 21px
-			height: 26px
+			width: 13px
+			height: 13px
 			margin-top: 3px
-			
+
 .track
 	float: left
-	width: 301px
-	height: 26px
-	margin: 0px
-	padding: 0px
-	background: url('/images/lttrack.png') no-repeat
-	
+	width: 275px
+	height: 23px
+	margin: 0px 10px
+	background: url('/images/lttrack.jpg') no-repeat
+
 .handle
-	width: 40px
-	height: 26px
+	width: 39px
+	height: 23px
 	cursor: move
 	background: url('/images/lthandle.png') no-repeat
-	
+
 #mission
 	.image
 		width: 308px
@@ -207,7 +208,7 @@
 .storelocatorbg
 	width: 669px
 	background: url('/images/ltbgrepeater.png') repeat-y
-	
+
 #store_locator
 	width: 669px
 	background: url('/images/ltbgrepeater.png') repeat-y
@@ -262,9 +263,9 @@
 			border-bottom: 1px solid #000000
 			margin-bottom: 10px
 			padding: 10px 10px 10px 0px
+			line-height: 14px
 			+sitefont1
 			+smallfont
-			line-height: 14px
 			.name
 				+sitecolor1
 
@@ -318,9 +319,9 @@
 			margin-top: 2px
 	a:link
 		+smallfont
-		font-style: italic
 		+sitefont2
 		+black
+		font-style: italic
 	a:visited
 		+black
 	a:hover
@@ -401,7 +402,6 @@
 			width: 55px
 			height: 56px
 
-
 #facebox
 	position: absolute
 	top: 0
@@ -426,7 +426,6 @@
 		background: url('/images/facebox/ltcloselabel.png')
 		background-repeat: no-repeat
 		float: right
-		margin-right: 15px
 		display: block
 		width: 47px
 		height: 50px
@@ -454,9 +453,8 @@
 		padding: 0
 	.body
 		padding: 10px
-		background: url('/images/facebox/ltfaceboxborder.png') no-repeat #fff
+		background: #fff
 		width: 625px
-		height: 627px
 	.image
 		text-align: center
 	img
@@ -468,70 +466,63 @@
 		height: 1px
 		width: 1px
 		padding: 0
-	#faceboximage
-		width: 555px
-		margin-left: 10px
-		position: relative
-		z-index: 100
-	#faceboxcontent
-		margin-top: -70px
-		position: relative
-		z-index: 200
-		.titlerow
-			border-bottom: 1px solid #666666
-			width: 565px
-			margin-left: 30px
-			.title
-				margin-top: 5px
-				float: left
-				width: 400px
-				+sitefont1
-				+sitecolor3
-				font-size: 14px
-				text-transform: uppercase
-			.price
-				margin-top: 5px
-				float: left
-				width: 60px
-				+sitefont1
-				+sitecolor1
-				font-size: 14px
-				text-transform: uppercase
+	.description
+		width: 380px
+		margin-left: 50px
+		float: left
+		.title
+			float: left
+			width: 345px
+			margin-bottom: 5px
+			font-size: 13px
+			+sitefont1
+			font-weight: normal
+			text-transform: uppercase
+			+sitecolor3
+		.price
+			float: right
+			width: 20px
+			margin-right: 10px
+			+sitecolor1
+			+sitefont1
+		.productdescription
+			margin-top: 5px
+			+smallfont
+			+sitefont1
+			+sitecolor3
+		.properties
+			+smallfont
+			+sitefont1
+			+sitecolor3
+	#faceboxfunctions
+		width: 105px
+		float: left
+		margin-left: 85px
+		.functionsfonts
+			+sitecolor1
+			font-size: 14px
 			.quantity
-				margin-top: 5px
 				float: left
-				width: 40px
+				width: 30px
+				margin-top: 5px
 				+sitefont1
-				+sitecolor1
-				font-size: 14px
-				font-weight: bold
+				+mediumfont
 			.quantityinput
 				float: left
 				width: 44px
-				height: 32px
 				background: url('/images/facebox/ltfaceboxqty.png') no-repeat
-				margin-bottom: 5px
+				height: 32px
 				input
-					width: 35px
-					margin: 5px 0px 0px 3px
-					padding: 3px 0px
-					font-weight: bold
+					+sitefont1
 					+sitecolor1
+					width: 35px
+					border: 0px
+					padding: 0px
+					margin: 10px 0px 0px 3px
 					text-align: center
-					border: 0
-		.descriptionrow
-			margin-top: 5px
-			width: 565px
-			margin-left: 30px
-			.description
-				float: left
-				width: 440px
-				+sitefont1
-				+smallfont
-			.addbutton
-				float: left
+		.addbutton
+			margin-left: 10px
 
-		
 #facebox_overlay
 	position: fixed
 	top: 0px

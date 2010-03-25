@@ -1,0 +1,1 @@
+SPREE_EXTENSIONS_LOAD_ORDER = [:theme_default, :all, :advanced_taxon, :recommendations, :sites, :locations, :wholesaler, :love_and_toast]

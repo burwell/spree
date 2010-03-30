@@ -7,7 +7,7 @@
 =mediumfont
 	font-size: 12px
 =largefont
-	font-size: 13px
+	font-size: 14px
 =sitecolor1
 	color: #ff66cc
 =sitecolor2
@@ -46,7 +46,7 @@
 		background: url('/images/ltshoppingbagqty.jpg') no-repeat
 		margin: 10px 0px 0px 35px
 		.cartmargin
-			margin: 16px 0px 0px 19px
+			margin: 16px 0px 0px 17px
 			.qtyposition
 				text-align: center
 				padding-top: 10px
@@ -77,7 +77,7 @@
 		text-align: left
 		+smallfont
 		text-transform: lowercase
-		margin-bottom: 100px
+		margin-bottom: 70px
 		ul
 			list-style-type: none
 			display: block
@@ -123,6 +123,18 @@
 			width: 41px
 			height: 42px
 
+#footerlinks
+	+smallfont
+	+sitecolor2
+	+sitefont1
+	margin-left: 125px
+	margin-top: 20px
+	a
+		+smallfont
+		+sitecolor2
+		+sitefont1
+	
+
 #right
 	width: 692px
 	float: left
@@ -154,8 +166,14 @@
 	width: 520px
 	float: left
 
+#productsajax
+	width: 692px
+	background: url('/images/ltproductsbg.png') no-repeat
+	height: 448px
+
 .innerproducts
 	width: 630px
+	margin-left: 25px
 	.row
 		height: 372px
 		.product
@@ -178,8 +196,8 @@
 					+sitefont1
 					margin-right: 10px
 				.button
-					width: 69px
-					height: 69px
+					width: 90px
+					height: 90px
 					float: left
 						
 .scroller
@@ -207,31 +225,28 @@
 	background: url('/images/lthandle.png') no-repeat
 	
 #mission
-	width: 671px
-	background: url('/images/ltbgrepeater.png') repeat-y
-	height: 399px
+	width: 692px
+	background: url('/images/ltmissionbg.png') no-repeat
+	height: 422px
 	float: left
 	text-align: center
-	margin-left: 20px
 	.copy
 		+mediumfont
 		+sitefont1
 		color: #000000
 		line-height: 14px
+		padding: 0px 60px
 		.image
 			margin: 20px 0px 20px 0px
 		.pink
 			+sitecolor1
 		.small
 			font-size: 8px
-
-.storelocatorbg
-	width: 669px
-	background: url('/images/ltbgrepeater.png') repeat-y
 	
-#store_locator
-	width: 669px
-	background: url('/images/ltbgrepeater.png') repeat-y
+#storelocator
+	width: 692px
+	background: url('/images/ltcartrepeaterbg.png') repeat-y
+	padding: 20px 0px 0px 15px
 	.padding
 		padding: 10px 10px 10px 18px
 	.bottommargin
@@ -290,7 +305,9 @@
 				+sitecolor1
 
 #account_login
-	margin-left: 40px
+	width: 692px
+	background: url('/images/ltaccountbg.png') no-repeat
+	height: 434px
 	.imagecenter
 		text-align: center
 	.loginarea
@@ -350,8 +367,10 @@
 			+sitecolor1
 
 #contact_us
-	position: relative
-	z-index: 500
+	width: 692px
+	background: url('/images/ltcontactbg.png') no-repeat
+	height: 509px
+	padding-left: 40px
 	.formfields
 		margin-left: 20px
 		padding-top: 10px
@@ -427,13 +446,44 @@
 			float: left
 			margin-left: 120px
 
-#margot_elena_brands
-	position: relative
-	z-index: 500
+#brands
+	width: 692px
+	background: url('/images/ltbrandsbg.png') no-repeat
+	height: 518px
+	.margotimg
+		margin: 5px 0px 0px 255px
+	.toplines
+		margin-left: 18px
+		background: url('/images/ltbrandstoplines.png') no-repeat
+		width: 678px
+		height: 40px
+	.brandlist
+		height: 240px
+		margin-top: -40px
+	.bottomlines
+		margin-bottom: 10px
+		margin-left: 18px
+		background: url('/images/ltbrandsbottomlines.png') no-repeat
+		width: 678px
+		height: 9px
 
-#in_the_press
-	position: relative
-	z-index: 500
+#press
+	width: 692px
+	background: url('/images/ltpressbg.png') no-repeat
+	height: 516px
+	padding-left: 20px
+	.toplines
+		margin-bottom: 5px
+		padding-top: 10px
+		background: url('/images/ltpresstoplines.png') no-repeat
+		width: 678px
+		height: 39px
+	.bottomlines
+		margin: 5px 0px 5px 0px
+		background: url('/images/ltpressbottomlines.png') no-repeat
+		width: 678px
+		height: 9px
+		
 
 #forgot_password
 	width: 692px
@@ -643,7 +693,7 @@
 		.speciallabel
 			width: 165px
 			float: left
-			margin-right:10px
+			margin-right: 10px
 			margin-top: 4px
 			+smallfont			
 			text-align: right
@@ -680,35 +730,28 @@
 	left: 0
 	z-index: 10000
 	text-align: left
-	.b
-		background: url(/images/facebox/b.png)
-	.tl
-		background: url(/images/facebox/tl.png)
-	.tr
-		background: url(/images/facebox/tr.png)
-	.bl
-		background: url(/images/facebox/bl.png)
-	.br
-		background: url(/images/facebox/br.png)
-	.next
-		background: url(/images/facebox/next.png)
-	.prev
-		background: url(/images/facebox/prev.png)
+	.topborder
+		background: url('/images/facebox/ltfaceboxtopborder.png') no-repeat
+		width: 787px
+		height: 39px
+	.bottomborder
+		background: url('/images/facebox/ltfaceboxbottomborder.png') no-repeat
+		width: 787px
+		height: 28px
+	.leftborder
+		background: url('/images/facebox/ltfaceboxleftborder.png') no-repeat
+		width: 29px
+		height: 618px
+	.rightborder
+		background: url('/images/facebox/ltfaceboxrightborder.png') no-repeat
+		width: 16px
+		height: 618px
 	.close
-		background: url('/images/facebox/ltcloselabel.png')
-		background-repeat: no-repeat
+		background: url('/images/facebox/ltfaceboxclose.png') no-repeat
 		float: right
-		display: block
-		width: 47px
-		height: 50px
-	.prev, .next
-		display: block
-		float: left
-		width: 20px
-		height: 22px
-	.navigation .counter
-		float: left
-		padding: 3px 5px
+		width: 23px
+		height: 26px
+		margin-right: 5px
 	.loading
 		margin: 0 auto
 		width: 32px
@@ -724,9 +767,94 @@
 		border-bottom: 0
 		padding: 0
 	.body
-		padding: 10px
-		background: #fff
-		width: 625px
+		width: 742px
+		height: 618px
+		background: url('/images/facebox/ltfaceboxbodybg.png') repeat-y
+		+sitefont1
+		+sitecolor2
+	.imagearea
+		width: 500px
+		float: left
+	.descriptionarea
+		width: 226px
+		float: left
+		.title
+			+largefont
+			text-transform: uppercase
+		.price
+			+largefont
+			+sitecolor1
+			margin: 10px 0px
+		.dots1
+			width: 226px
+			height: 14px
+			background: url('/images/facebox/ltfaceboxdots1.png') no-repeat
+			margin-bottom: 10px
+		.description
+			font-size: 10px
+			margin-bottom: 15px
+		.quantity
+			width: 40px
+			float: left
+			font-weight: bold
+			color: #ff66cc
+			margin-top: 5px
+		.quantityinput
+			float: left
+			width: 46px
+			height: 33px
+			background: url('/images/facebox/ltfaceboxqty.png') no-repeat
+			input
+				border: 0
+				padding: 0
+				margin: 10px 0px 0px 7px
+				+sitecolor1
+				font-weight: bold
+				text-align: center
+				width: 30px
+				background-color: transparent
+		.largebutton
+			text-align: right
+	.dots2
+		background: url('/images/facebox/ltfaceboxdots2.png') no-repeat
+		width: 734px
+		height: 15px
+	.moniker
+		+largefont
+		text-transform: uppercase
+		+sitecolor1
+		width: 195px
+		height: 70px
+		float: right
+	.monikerposition
+		margin-top: 25px
+		margin-left: 5px
+	.recommendations
+		width: 535px
+		float: right
+		.item
+			width: 170px
+			margin-right: 5px
+			float: left
+		.itemimage
+			width: 70px
+			float: left
+		.itemtitle
+			width: 100px
+			float: left
+			+smallfont
+		.iteminfo
+			width: 100px
+			float: left
+			+smallfont
+		.itemprice
+			width: 50px
+			float: left
+			+sitecolor1
+		.itembtn
+			width: 41px
+			height: 41px
+			float: left
 	.image
 		text-align: center
 	img
@@ -734,66 +862,8 @@
 		margin: 0
 	.footer
 		padding-top: 0px
-	.tl, .tr, .bl, .br
-		height: 1px
-		width: 1px
-		padding: 0
-	.description
-		width: 380px
-		margin-left: 50px
-		float: left
-		.title
-			float: left
-			width: 345px
-			margin-bottom: 5px
-			font-size: 13px
-			+sitefont1
-			font-weight: normal
-			text-transform: uppercase
-			+sitecolor3
-		.price
-			float: right
-			width: 20px
-			+sitecolor1
-			+sitefont1
-			margin-right: 10px
-		.productdescription
-			margin-top: 5px
-			+smallfont
-			+sitefont1
-			+sitecolor3
-		.properties
-			+smallfont
-			+sitefont1
-			+sitecolor3
-	#faceboxfunctions
-		width: 105px
-		float: left
-		margin-left: 85px
-		.functionsfonts
-			+sitecolor1
-			font-size: 14px
-			.quantity
-				float: left
-				width: 30px
-				margin-top: 5px
-				+sitefont1
-				+mediumfont
-			.quantityinput
-				float: left
-				width: 44px
-				background: url('/images/facebox/ltfaceboxqty.png') no-repeat
-				height: 32px
-				input
-					+sitefont1
-					width: 35px
-					border: 0px
-					padding: 0px
-					margin: 10px 0px 0px 3px
-					+sitecolor1
-					text-align: center
-		.addbutton
-			margin-left: 10px
+		height: 26px		
+
 		
 #facebox_overlay
 	position: fixed

@@ -46,10 +46,8 @@
 		background: url('/images/ltshoppingbagqty.jpg') no-repeat
 		margin: 10px 0px 0px 35px
 		.cartmargin
-			margin: 16px 0px 0px 17px
-			.qtyposition
-				text-align: center
-				padding-top: 10px
+			margin: 16px 0px 0px 0px
+			text-align: center
 	.shoppingbag
 		float: left
 		width: 127px
@@ -62,6 +60,8 @@
 #left
 	width: 300px
 	float: left
+	a
+		+sitecolor2
 	#shape
 		margin-left: 39px
 		margin-top: 60px
@@ -85,14 +85,6 @@
 			padding: 0
 		li
 			padding: 2px 0px 2px 5px
-		a:link
-			+sitecolor2
-		a:hover
-			+sitecolor1
-		a:visted
-			+sitecolor2
-		a:active
-			+sitecolor1
 		#categorylinks
 			margin: 7px 0px 15px 0px
 		.sublist
@@ -188,7 +180,7 @@
 				padding: 0px 35px
 				.title
 					height: 92px
-					width: 150px
+					width: 130px
 					float: left
 					+mediumfont
 					+sitecolor1
@@ -311,50 +303,54 @@
 	.imagecenter
 		text-align: center
 	.loginarea
-		width: 230px
+		width: 260px
 		text-align: center
 		margin: 0px auto
-		.leftalign
+		.emaillabel
+			width: 62px
+			height: 28px
+			float: left
+		.emailinput
+			width: 166px
+			float: left
+			height: 28px
+			background: url('/images/ltaccountpasswordinput.png') no-repeat
+			input
+				border: 0
+				margin: 5px 0px 0px 0px
+				padding: 0
+				width: 157px
+		.passwordlabel
+			width: 62px
+			height: 29px
+			float: left
+		.passwordinput
+			width: 166px
+			float: left
+			height: 29px
+			background: url('/images/ltaccountpasswordinput.png') no-repeat
+			input
+				border: 0
+				margin: 5px 0px 0px 0px
+				padding: 0
+				width: 157px
+		.checkbox
+			margin-left: 62px
+			width: 22px
+			height: 18px
+			float: left
+		.remeberlabel
+			width: 100px
+			float: left
+			+smallfont
+			+sitefont1
+			text-transform: lowercase
 			text-align: left
-			.emaillabel
-				margin-top: 10px
-			.emailinput
-				width: 224px
-				height: 34px
-				background: url('/images/ltaccountemailinput.png') no-repeat
-				input
-					margin: 0
-					padding: 0
-					width: 200px
-					margin: 11px 0px 0px 10px
-					border: 0
-			.passwordinput
-				width: 224px
-				height: 30px
-				background: url('/images/ltaccountpasswordinput.png') no-repeat
-				input
-					margin: 0
-					padding: 0
-					width: 200px
-					margin: 7px 0px 0px 10px
-					border: 0
-		.links
-			margin-bottom: 10px
-			.checkbox
-				margin-left: 5px
-				width: 20px
-				float: left
-			.checkboxlabel
-				width: 100px
-				float: left
-				margin-top: 3px
-			.checkboxtext
-				+sitefont2
-				+mediumfont
-			.submit
-				width: 100px
-				float: left
-				margin-top: 4px
+			margin-top: 4px
+		.loginbtn
+			width: 47px
+			height: 48px
+			float: left
 		a:link
 			+smallfont
 			+sitefont2
@@ -447,13 +443,13 @@
 			margin-left: 120px
 
 #brands
-	width: 692px
+	width: 682px
 	background: url('/images/ltbrandsbg.png') no-repeat
 	height: 518px
 	.margotimg
 		margin: 5px 0px 0px 255px
 	.toplines
-		margin-left: 18px
+		margin-left: 3px
 		background: url('/images/ltbrandstoplines.png') no-repeat
 		width: 678px
 		height: 40px
@@ -462,7 +458,6 @@
 		margin-top: -40px
 	.bottomlines
 		margin-bottom: 10px
-		margin-left: 18px
 		background: url('/images/ltbrandsbottomlines.png') no-repeat
 		width: 678px
 		height: 9px
@@ -560,6 +555,240 @@
 	a:active
 		+black
 
+#userform
+	margin-top: 20px
+	h1
+		+mediumfont
+		+sitefont1
+		font-weight: normal
+		+sitecolor1
+		text-transform: uppercase
+		margin: 20px 0px
+	.left
+		width: 275px
+		float: left
+		margin-right: 50px
+	.right
+		width: 275px
+		float: left
+	.formlabel
+		width: 64px
+		float: left
+	.formemailinput
+		width: 134px
+		height: 23px
+		float: left
+		background: url('/images/ltformemailinput.png') no-repeat
+		input
+			width: 125px
+			border: 0
+			margin: 5px 0px 0px 3px
+			padding: 0
+	.formpasswordinput
+		width: 134px
+		height: 20px
+		float: left
+		background: url('/images/ltformpasswordinput.png') no-repeat
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formpasswordconfirminput
+		width: 134px
+		height: 23px
+		float: left
+		background: url('/images/ltformpasswordconfirminput.png') no-repeat
+		input
+			width: 125px
+			border: 0
+			margin: 4px 0px 0px 3px
+			padding: 0
+	.formbillingfirstnameinput
+		background: url('/images/ltformbillingfirstnameinput.png') no-repeat
+		width: 134px
+		height: 23px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 4px 0px 0px 3px
+			padding: 0
+	.formbillinglastnameinput
+		background: url('/images/ltformbillinglastnameinput.png') no-repeat
+		width: 134px
+		height: 20px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formbillingaddressinput
+		background: url('/images/ltformbillingaddressinput.png') no-repeat
+		width: 134px
+		height: 20px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formbillingaddress2input
+		background: url('/images/ltformbillingaddress2input.png') no-repeat
+		width: 134px
+		height: 21px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formbillingcityinput
+		background: url('/images/ltformbillingcityinput.png') no-repeat
+		width: 134px
+		height: 23px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formbillingstateinput
+		background: url('/images/ltformbillingstateinput.png') no-repeat
+		width: 138px
+		height: 23px
+		float: left
+		select
+			width: 130px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formbillingzipinput
+		background: url('/images/ltformbillingzipinput.png') no-repeat
+		width: 138px
+		height: 23px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formbillingphoneinput			
+		background: url('/images/ltformbillingphoneinput.png') no-repeat
+		width: 132px
+		height: 20px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0		
+	.formbillingemailinput
+		background: url('/images/ltformbillingemailinput.png') no-repeat
+		width: 132px
+		height: 20px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0		
+	.shippingcheckbox
+		float: right
+		margin-right: 77px
+	.usebilling
+		float: right
+		margin-top: 3px
+		+sitefont1
+		+smallfont
+	.formshippingfirstnameinput
+		background: url('/images/ltformshippingfirstnameinput.png') no-repeat
+		width: 134px
+		height: 23px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 4px 0px 0px 3px
+			padding: 0
+	.formshippinglastnameinput
+		background: url('/images/ltformshippinglastnameinput.png') no-repeat
+		width: 134px
+		height: 20px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formshippingaddressinput
+		background: url('/images/ltformshippingaddressinput.png') no-repeat
+		width: 134px
+		height: 20px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formshippingaddress2input
+		background: url('/images/ltformshippingaddress2input.png') no-repeat
+		width: 134px
+		height: 21px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formshippingcityinput
+		background: url('/images/ltformshippingcityinput.png') no-repeat
+		width: 134px
+		height: 23px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formshippingstateinput
+		background: url('/images/ltformshippingstateinput.png') no-repeat
+		width: 138px
+		height: 24px
+		float: left
+		select
+			width: 130px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formshippingzipinput
+		background: url('/images/ltformshippingzipinput.png') no-repeat
+		width: 134px
+		height: 22px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formshippingphoneinput
+		background: url('/images/ltformshippingphoneinput.png') no-repeat
+		width: 132px
+		height: 20px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.requiredfield
+		width: 5px
+		float: left
+	.submitbutton
+		width: 110px
+		height: 43px
+		float: left
 
 #signup
 	width: 692px
@@ -571,6 +800,7 @@
 	.createlinks
 		text-align: right
 		margin-right: 140px
+		margin-top: 25px
 	a:link
 		+black
 	a:visited
@@ -579,36 +809,6 @@
 		+sitecolor1
 	a:active
 		+black
-	#newuser
-		margin: 20px 0px 20px 0px
-		.nclabel
-			width: 60px
-			float: left
-			text-align: right
-			margin-right: 10px
-			margin-top: 2px
-		.ncinput
-			width: 130px
-			float: left
-			margin-bottom: 1px
-			input
-				border: 1px solid #000000
-				padding: 2px 0px 2px 2px
-				width: 125px
-				margin: 0
-		.left
-			width: 220px
-			float: left
-			margin-right: 10px
-		.right
-			width: 220px
-			float: left
-		h1
-			+mediumfont
-			+sitecolor1
-			text-transform: uppercase
-			margin: 20px 0px 20px 0px
-
 
 #shopping_cart
 	width: 692px
@@ -622,14 +822,49 @@
 		font-weight: bold
 		text-align: right
 		margin-right: 80px
+	.empty
+		float: right
 	.update
-		text-align: right
+		float: right
 		margin-right: 70px
+	.continueshopping
+		float: right
 	.checkout
-		text-align: right
+		float: right
 		margin-right: 70px
 	.dots
 		margin: 10px 0px 10px 260px
+	.recommendations
+		margin: 5px 0px
+		h1
+			+largefont
+			+sitecolor1
+			text-transform: uppercase
+			font-weight: normal
+			margin: 5px 0px
+		td
+			width: 175px
+		.miniimage
+			border: 1px solid #cccccc
+			width: 70px
+			height: 70px
+			margin-right: 5px
+			float: left
+		.information
+			width: 100px
+			+smallfont
+			+sitefont1
+			float: left
+			.title
+				+sitecolor2
+			.price
+				width: 40px
+				float: left
+				margin-right: 5px
+				+sitecolor1
+			.addbutton
+				width: 55px
+				float: left
 	#cart_details
 		width: 550px
 		th
@@ -660,69 +895,188 @@
 	padding: 20px 0px 0px 40px
 	+sitefont1
 	+mediumfont
+
+div#checkout
+	position: relative
+	.errorExplanation
+		+sitecolor1
+		+smallfont
+	h1
+		+mediumfont
+		+sitefont1
+		font-weight: normal
+		+sitecolor1
+		text-transform: uppercase
+		margin: 10px 0px	
+	h2
+		+sitecolor1
+		+largefont
+		margin: 10px 0px 10px 0px
+	ol.progress-steps
+		list-style: none
+		margin: 10px 0px
+		padding: 0
+		line-height: 1em
+		font-size: 12px
+	ol.progress-steps li
+		margin: 0
+		padding: 0
+		list-style: none
+		display: block
+		float: left
+		color: #000
+		background-position: top left
+		background-repeat: no-repeat
+		background-image: url(../images/step-progress/incomplete-incomplete.gif)
+	ol.progress-steps li span
+		padding: 5px 14px 7px 24px
+		display: block
+		float: left
+		background-position: top right
+		background-repeat: no-repeat
+	ol.progress-steps li a
+		text-decoration: none
+		color: #333
+	/* lefts */
+	ol.progress-steps li.current-first span, ol.progress-steps li.completed-first span
+		padding-left: 14px
+	ol.progress-steps li.current-first
+		background-image: url(../images/step-progress/current-first.gif)
+	ol.progress-steps li.completed-first
+		background-image: url(../images/step-progress/completed-first.gif)!important
+	/* middles */
+	ol.progress-steps li.current, ol.progress-steps li.current-first, ol.progress-steps li.current-last
+		color: #fff
+	ol.progress-steps li.completed
+		background-image: url(../images/step-progress/completed-completed.gif)
+	ol.progress-steps li.current, ol.progress-steps li.current-last
+		background-image: url(../images/step-progress/completed-current.gif)
+	ol.progress-steps li.next, ol.progress-steps li.next-last
+		background-image: url(../images/step-progress/current-incomplete.gif)
+	/* rights */
+	ol.progress-steps li.last span, ol.progress-steps li.next-last span
+		background-image: url(../images/step-progress/incomplete-right.gif)
+	ol.progress-steps li.current-last span
+		background-image: url(../images/step-progress/current-right.gif)
 	.left
+		float: left
 		width: 240px
-		margin-right: 30px
-		float: left
-		h2
-			+sitecolor1
-			+largefont
-			margin: 10px 0px 10px 0px
-		.inputlabel
-			width: 60px
-			float: left
-			text-align: right
-			margin-right: 10px
-			margin-top: 2px
-			+smallfont
-		.inputfield
-			width: 140px
-			float: left
-			margin-bottom: 1px
-			input
-				border: 1px solid #000000
-				padding: 2px 0px 2px 2px
-				width: 125px
-				margin: 0
-			select
-				border: 1px solid #000000
-				padding: 2px 0px 2px 2px
-				margin: 0
-		.selectwidth
-			width: 129px
-		.speciallabel
-			width: 165px
-			float: left
-			margin-right: 10px
-			margin-top: 4px
-			+smallfont			
-			text-align: right
-		.specialinput
-			width: 25px
-			height: 20px
-			float: left
+		margin-right: 10px
 	.right
-		width: 360px
+		width: 350px
 		float: left
-		.title
-			+smallfont
-			+sitecolor2
-		.total
-			+mediumfont
+		th
 			+sitecolor1
-		.qtyinput
-			width: 35px
-			height: 38px
-			background: url('/images/ltcartqty.png') no-repeat
+	.speciallabel
+		width: 165px
+		float: left
+		margin-right: 10px
+		margin-top: 4px
+		+smallfont			
+		text-align: right
+	.specialinput
+		width: 25px
+		height: 20px
+		float: left
+	.title
+		+smallfont
+		+sitecolor2
+	.total
+		+mediumfont
+		+sitecolor1
+	.qtyinput
+		width: 35px
+		height: 38px
+		background: url('/images/ltcartqty.png') no-repeat
+		input
+			width: 22px
+			margin: 11px 0px 0px 6px
+			padding: 0
+			border: 0
+			text-align: center
+			+sitecolor1
+			+mediumfont
+	.chargessummary
+		+mediumfont
+		+sitecolor1
+		td
+			text-align: right
+	.couponcode
+		+mediumfont
+		+sitecolor1
+		width: 350px
+		.coupontitle
+			float: left
+			width: 80px
+			margin-top: 7px
+			margin-right: 4px
+		.couponcodeinput
+			background: url('/images/ltformbillingcityinput.png') no-repeat
+			width: 134px
+			height: 23px
+			float: left
+			margin-top: 7px
+			text-align: left
 			input
-				width: 22px
-				margin: 11px 0px 0px 6px
+				width: 124px
+				margin: 2px 0px 0px 3px
 				padding: 0
 				border: 0
-				text-align: center
-				+sitecolor1
-				+mediumfont
-			
+		.couponsubmit
+			width: 110px
+			float: left
+	.formlabel
+		width: 64px
+		float: left	
+	.formcardnumberinput
+		background: url('/images/ltformcardnumberinput.png') no-repeat
+		width: 139px
+		height: 19px
+		float: left
+		input
+			width: 130px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formexpiresmonthinput
+		background: url('/images/ltformexpiresmonthinput.png') no-repeat
+		width: 71px
+		height: 24px
+		float: left
+		select
+			width: 62px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formexpiresyearinput
+		background: url('/images/ltformexpiresyearinput.png') no-repeat
+		width: 69px
+		height: 24px
+		float: left
+		select
+			width: 55px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.formcvvinput
+		background: url('/images/ltformcvvinput.png') no-repeat
+		width: 139px
+		height: 26px
+		float: left
+		input
+			width: 125px
+			border: 0
+			margin: 3px 0px 0px 3px
+			padding: 0
+	.whatsthis
+		width: 139px
+		height: 26px
+		float: left
+		a
+			+black
+			+sitefont1
+			+smallfont	
+				
 
 #facebox
 	position: absolute
@@ -852,8 +1206,8 @@
 			float: left
 			+sitecolor1
 		.itembtn
-			width: 41px
-			height: 41px
+			width: 50px
+			height: 50px
 			float: left
 	.image
 		text-align: center

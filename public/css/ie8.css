@@ -1,9 +1,3 @@
-#facebox {
-	position:absolute;
-	margin-left:30%;
-}
-.addtocartmargin { padding-top:13px; }
-#emailbox1 input {margin:0;padding:0px 0px 0px 20px;}
-#emailbox2 input {margin:0;padding:0px 0px 0px 20px;}
-#emailname {margin-top:0px;}
-#emaillabel {margin-top:0px;}
+#brands .brandlist { height: 240px; margin-top: 0px; }
+
+#facebox { position: absolute; margin-left: 30%; }

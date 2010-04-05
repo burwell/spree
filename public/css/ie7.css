@@ -1,14 +1,10 @@
-#emailarea {clear:both;text-align:left;margin-left:110px;}
-#emailarea .nameinput { background: url('/images/ltemailnametextbox.jpg') no-repeat; height: 25px; width: 131px; margin-top: -3px;}
-#emailarea .nameinput input { margin: 3px 0px 0px 0px; width: 115px; border: 0; padding: 0; }
-#emailarea .emailinput input { margin: 3px 0px 0px 0px; border: 0; padding: 0; width: 115px; }
-
-
-.arealabel {width:23px;float:left;height:399px;}
-.areabg {width:669px;height:397px;background:url('/images/ltbgrepeater.png') repeat-y;}
+#emailarea { clear: both; text-align: left; margin-left: 60px; }
 
 .innerproducts .row .product .buttonarea .button { width: 56px; height: 48px; background: url('/images/ltaddbutton.png') no-repeat; margin-left: 117px; padding-top: 13px; padding-left: 5px; cursor: pointer; }
 .innerproducts .row .product .buttonarea .button .buttontext { background-color: #ccff99; border: 0; text-align: center; font-family: Georgia; color: #ff66cc; width: 47px; cursor: pointer; margin-left:-117px; font-size:10px;}
 
-#facebox { position: absolute; top: 0; left: 0; z-index: 10000; text-align: left; width: 625px; margin-left: 0px;}
-#facebox #faceboxfunctions { width: 105px; float: left; margin-left: 55px; }
+#footerlinks { font-size: 10px; color: #999999; font-family: 'Trebuchet MS', Helvetica; margin-left: 110px; margin-top: 20px; text-align: left;}
+
+#facebox { position: absolute; top: 0; left: 0; z-index: 10000; text-align: left; width: 787px; margin-left: 0px;}
+#facebox .moniker { font-size: 14px; text-transform: uppercase; color: #ff66cc; width: 195px; height: 60px; float: right; }
+#facebox .dots2 { background: url('/images/facebox/ltfaceboxdots2.png') no-repeat; width: 734px; height: 15px; margin-top: -3px;}

@@ -41,7 +41,6 @@ Spree::Initializer.run do |config|
   config.gem "faker", :version => '0.3.1'
   config.gem 'paperclip', :version => '>=2.3.1.1'
   config.gem 'geokit'
-  config.gem 'memcache-client', :version => '1.8.2', :lib => "memcache"
 
   # Only load the plugins named here, in the order given. By default, all plugins
   # in vendor/plugins are loaded in alphabetical order.

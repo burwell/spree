@@ -144,19 +144,21 @@
 	margin-left: 20px
 
 
-.splashbg
-	width: 671px
-	background: url('/images/ltbgrepeater.png') repeat-y
-.splashbanner
-	margin-left: 64px
-.splashshophere
-	width: 110px
-	float: left
-	margin-top: 135px
-	margin-left: 18px
-.splashproducts
-	width: 520px
-	float: left
+#splash
+	width: 694px
+	background: url('/images/ltsplashbg.png') no-repeat
+	height: 452px
+	.banner
+		margin-left: 65px
+		padding-top: 25px
+	.shophere
+		margin-top: 150px
+		margin-left: 20px
+		width: 87px
+		float: left
+	.products
+		width: 584px
+		float: left
 
 #productsajax
 	width: 692px
@@ -443,24 +445,30 @@
 			margin-left: 120px
 
 #brands
-	width: 682px
+	width: 697px
 	background: url('/images/ltbrandsbg.png') no-repeat
-	height: 518px
-	.margotimg
-		margin: 5px 0px 0px 255px
-	.toplines
-		margin-left: 3px
-		background: url('/images/ltbrandstoplines.png') no-repeat
-		width: 678px
-		height: 40px
-	.brandlist
-		height: 240px
-		margin-top: -40px
-	.bottomlines
-		margin-bottom: 10px
-		background: url('/images/ltbrandsbottomlines.png') no-repeat
-		width: 678px
-		height: 9px
+	height: 523px
+	.scroller
+		width: 669px
+		height: 27px
+		.scrollermargin
+			margin-left: 215px
+			.scrollbutton
+				cursor: pointer
+				float: left
+				width: 23px
+				height: 25px
+	.track
+		float: left
+		width: 275px
+		height: 25px
+		margin: 0px 10px
+		background: url('/images/ltbrandstrack.png') no-repeat
+	.handle
+		width: 40px
+		height: 25px
+		cursor: move
+		background: url('/images/ltbrandshandle.png') no-repeat
 
 #press
 	width: 692px
@@ -832,6 +840,8 @@
 	.checkout
 		float: right
 		margin-right: 70px
+	.or
+		float: right
 	.dots
 		margin: 10px 0px 10px 260px
 	.recommendations
@@ -960,13 +970,20 @@ div#checkout
 		background-image: url(../images/step-progress/current-right.gif)
 	.left
 		float: left
-		width: 240px
+		width: 310px
 		margin-right: 10px
 	.right
-		width: 350px
+		width: 280px
 		float: left
 		th
 			+sitecolor1
+	.ssllogo
+		width: 259px
+		height: 164px
+		text-align: center
+		background: url('/images/ltcartyouresafe.png') no-repeat
+		padding-top: 30px
+		margin-left: 30px
 	.speciallabel
 		width: 165px
 		float: left
@@ -1005,7 +1022,7 @@ div#checkout
 		+sitecolor1
 		width: 350px
 		.coupontitle
-			float: left
+			float: right
 			width: 80px
 			margin-top: 7px
 			margin-right: 4px
@@ -1013,17 +1030,20 @@ div#checkout
 			background: url('/images/ltformbillingcityinput.png') no-repeat
 			width: 134px
 			height: 23px
-			float: left
+			float: right
 			margin-top: 7px
+			margin-right: 40px
 			text-align: left
 			input
 				width: 124px
 				margin: 2px 0px 0px 3px
 				padding: 0
 				border: 0
-		.couponsubmit
-			width: 110px
-			float: left
+		.couponapply
+			width: 134px
+			height: 50px
+			float: right
+			margin-right: 40px			
 	.formlabel
 		width: 64px
 		float: left	
@@ -1191,13 +1211,16 @@ div#checkout
 			float: left
 		.itemimage
 			width: 70px
+			height: 70px
+			margin-right: 3px
 			float: left
+			border: 1px solid #cccccc
 		.itemtitle
-			width: 100px
+			width: 95px
 			float: left
 			+smallfont
 		.iteminfo
-			width: 100px
+			width: 95px
 			float: left
 			+smallfont
 		.itemprice

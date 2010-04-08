@@ -544,24 +544,41 @@
 	width: 692px
 	background: url('/images/ltaccountordersummarybg.png') no-repeat
 	height: 535px
-	padding: 20px 0px 0px 60px
+	padding: 20px 0px 0px 15px
 	+sitefont1
 	+smallfont
+	.receipttop
+		width: 500px
+		float: left
+		margin-right: 10px
+		.label
+			width: 410px
+			float: left
+		.printericon
+			width: 50px
+			float: left
+			margin-top: 50px
+	.receiptmargot
+		width: 103px
+		float: left
+	.receipttext
+		margin: 10px 0px 10px 35px
+	.leftmargin
+		margin-left: 30px
 	#summarytable
 		+mediumfont
 		+black
 		.pinkhighlight
 			+sitecolor1
 	a:link
-		+black
-		font-weight: bold
-		+mediumfont
-	a:visited
-		+black
-	a:hover
 		+sitecolor1
-	a:active
+		+smallfont
+	a:visited
+		+sitecolor1
+	a:hover
 		+black
+	a:active
+		+sitecolor1
 
 #userform
 	margin-top: 20px

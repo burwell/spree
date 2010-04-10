@@ -236,6 +236,26 @@
 			+sitecolor1
 		.small
 			font-size: 8px
+
+#infopage
+	width: 692px
+	background: url('/images/ltcartrepeaterbg.png') repeat-y
+	padding: 20px 0px 0px 25px
+	+sitefont1
+	h2
+		margin: 10px 0px
+		padding: 0
+		+largefont
+		+sitecolor1
+	h4
+		margin: 5px 0px
+		padding: 0
+		+mediumfont
+		+sitecolor1
+	p
+		+smallfont
+	a
+		+sitecolor1
 	
 #storelocator
 	width: 692px
@@ -249,6 +269,10 @@
 		width: 72px
 		height: 34px
 		float: left
+	.internationlink a
+		+sitecolor1
+		+smallfont
+		+sitefont1
 	.addressinput
 		width: 300px
 		height: 34px
@@ -859,9 +883,9 @@
 		margin-right: 80px
 	.empty
 		float: right
+		margin-right: 70px
 	.update
 		float: right
-		margin-right: 70px
 	.continueshopping
 		float: right
 	.checkout
@@ -870,7 +894,7 @@
 	.or
 		float: right
 	.dots
-		margin: 10px 0px 10px 260px
+		margin: 10px 0px 10px 320px
 	.recommendations
 		margin: 5px 0px
 		h1
@@ -881,27 +905,29 @@
 			margin: 5px 0px
 		td
 			width: 175px
-		.miniimage
-			border: 1px solid #cccccc
-			width: 70px
-			height: 70px
-			margin-right: 5px
-			float: left
-		.information
-			width: 100px
-			+smallfont
-			+sitefont1
-			float: left
-			.title
-				+sitecolor2
-			.price
-				width: 40px
-				float: left
-				margin-right: 5px
-				+sitecolor1
-			.addbutton
-				width: 55px
-				float: left
+	.recommend
+		+smallfont
+		+sitecolor1
+		margin-left: 25px
+		text-transform: uppercase
+	.miniimage
+		border: 1px solid #cccccc
+		width: 70px
+		height: 70px
+		margin-right: 5px
+		float: left
+		margin-left: 25px
+	.information
+		+smallfont
+		+sitefont1
+		.title
+			+sitecolor2
+		.price
+			+sitecolor1
+		.addbutton
+			width: 55px	
+
+
 	#cart_details
 		width: 550px
 		th
@@ -1010,7 +1036,27 @@ div#checkout
 		text-align: center
 		background: url('/images/ltcartyouresafe.png') no-repeat
 		padding-top: 30px
+		padding-left: 60px
 		margin-left: 30px
+	#paymentfaq
+		width: 239px
+		padding: 10px 10px 10px 40px
+		h3
+			+mediumfont
+			+sitecolor1
+			padding: 0
+			margin: 10px 0px
+		h5
+			+smallfont
+			+sitecolor1
+			padding: 0
+			margin: 5px 0px
+		p
+			margin: 0px
+			padding: 0px
+			+smallfont
+		a
+			+sitecolor1
 	.speciallabel
 		width: 165px
 		float: left
@@ -1141,11 +1187,11 @@ div#checkout
 	.leftborder
 		background: url('/images/facebox/ltfaceboxleftborder.png') no-repeat
 		width: 29px
-		height: 618px
+		height: 475px
 	.rightborder
 		background: url('/images/facebox/ltfaceboxrightborder.png') no-repeat
 		width: 16px
-		height: 618px
+		height: 475px
 	.close
 		background: url('/images/facebox/ltfaceboxclose.png') no-repeat
 		float: right
@@ -1168,25 +1214,30 @@ div#checkout
 		padding: 0
 	.body
 		width: 742px
-		height: 618px
 		background: url('/images/facebox/ltfaceboxbodybg.png') repeat-y
 		+sitefont1
 		+sitecolor2
 	.imagearea
-		width: 500px
+		width: 400px
+		height: 250px
+		margin-right: 10px
+		text-align: center
 		float: left
 	.descriptionarea
-		width: 226px
+		width: 316px
 		float: left
 		.title
 			+largefont
 			text-transform: uppercase
+			font-weight: bold
+			margin: 10px 0px 10px 0px
 		.price
 			+largefont
 			+sitecolor1
-			margin: 10px 0px
+			margin: 10px 0px 10px 0px
+			font-weight: bold
 		.dots1
-			width: 226px
+			width: 310px
 			height: 14px
 			background: url('/images/facebox/ltfaceboxdots1.png') no-repeat
 			margin-bottom: 10px
@@ -1219,6 +1270,7 @@ div#checkout
 		background: url('/images/facebox/ltfaceboxdots2.png') no-repeat
 		width: 734px
 		height: 15px
+		margin: 10px 0px 10px 0px
 	.moniker
 		+largefont
 		text-transform: uppercase

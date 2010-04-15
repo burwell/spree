@@ -1,4 +1,5 @@
 @media screen and (-webkit-min-device-pixel-ratio:0){
 	.innerproducts .row .product .buttonarea .button .buttontext { background-color: #ccff99; margin-top:-2px; width:47px;}
 	input { outline: 0; }
+	#facebox .descriptionarea .quantity { width: 40px; float: left; font-weight: bold; color: #ff66cc; margin-top: 18px; }
 }

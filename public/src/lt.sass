@@ -45,8 +45,10 @@
 		height: 51px
 		background: url('/images/ltshoppingbagqty.jpg') no-repeat
 		margin: 10px 0px 0px 35px
+		+sitefont1
+		+smallfont
 		.cartmargin
-			margin: 16px 0px 0px 0px
+			margin: 19px 0px 0px 0px
 			text-align: center
 	.shoppingbag
 		float: left
@@ -844,6 +846,7 @@
 	.requiredfield
 		width: 5px
 		float: left
+		margin-left: 4px
 	.submitbutton
 		width: 110px
 		height: 43px
@@ -872,13 +875,15 @@
 #shopping_cart
 	width: 692px
 	background: url('/images/ltcartrepeaterbg.png') repeat-y
-	padding: 20px 0px 0px 40px
+	padding: 20px 0px 0px 30px
 	+sitefont1
 	+mediumfont
 	.subtotal
 		+sitecolor1
+		text-transform: uppercase
+		letter-spacing: 3px
 		font-size: 16px
-		font-weight: bold
+		font-weight: normal
 		text-align: right
 		margin-right: 80px
 	.empty
@@ -911,12 +916,10 @@
 		margin-left: 25px
 		text-transform: uppercase
 	.miniimage
-		border: 1px solid #cccccc
 		width: 70px
 		height: 70px
 		margin-right: 5px
 		float: left
-		margin-left: 25px
 	.information
 		+smallfont
 		+sitefont1
@@ -924,15 +927,20 @@
 			+sitecolor2
 		.price
 			+sitecolor1
+			float: left
 		.addbutton
-			width: 55px	
+			width: 55px
+			float: left	
 
 
 	#cart_details
 		width: 550px
 		th
 			+mediumfont
-			font-weight: bold
+			+sitecolor2
+			text-transform: uppercase
+			font-weight: normal
+			letter-spacing: 3px
 		.title
 			+smallfont
 			+sitecolor2
@@ -959,6 +967,32 @@
 	+sitefont1
 	+mediumfont
 
+#showproduct
+	width: 692px
+	background: url('/images/ltcartrepeaterbg.png') repeat-y
+	padding: 20px 0px 0px 10px
+	+sitefont1
+	+mediumfont
+	a
+		+sitefont1
+		+sitecolor1
+	.image
+		width: 500px
+		float: left
+	.description
+		width: 182px
+		float: left
+		.title
+			+sitecolor3
+			+largefont
+		span
+			+sitecolor1
+		.button
+			width: 90px
+			height: 90px
+		.showdescription
+			margin: 10px 0px
+			
 div#checkout
 	position: relative
 	.errorExplanation
@@ -970,66 +1004,24 @@ div#checkout
 		font-weight: normal
 		+sitecolor1
 		text-transform: uppercase
-		margin: 10px 0px	
+		margin: 10px 0px
+		letter-spacing: 3px	
 	h2
 		+sitecolor1
 		+largefont
 		margin: 10px 0px 10px 0px
-	ol.progress-steps
-		list-style: none
-		margin: 10px 0px
-		padding: 0
-		line-height: 1em
-		font-size: 12px
-	ol.progress-steps li
-		margin: 0
-		padding: 0
-		list-style: none
-		display: block
-		float: left
-		color: #000
-		background-position: top left
-		background-repeat: no-repeat
-		background-image: url(../images/step-progress/incomplete-incomplete.gif)
-	ol.progress-steps li span
-		padding: 5px 14px 7px 24px
-		display: block
-		float: left
-		background-position: top right
-		background-repeat: no-repeat
-	ol.progress-steps li a
-		text-decoration: none
-		color: #333
-	/* lefts */
-	ol.progress-steps li.current-first span, ol.progress-steps li.completed-first span
-		padding-left: 14px
-	ol.progress-steps li.current-first
-		background-image: url(../images/step-progress/current-first.gif)
-	ol.progress-steps li.completed-first
-		background-image: url(../images/step-progress/completed-first.gif)!important
-	/* middles */
-	ol.progress-steps li.current, ol.progress-steps li.current-first, ol.progress-steps li.current-last
-		color: #fff
-	ol.progress-steps li.completed
-		background-image: url(../images/step-progress/completed-completed.gif)
-	ol.progress-steps li.current, ol.progress-steps li.current-last
-		background-image: url(../images/step-progress/completed-current.gif)
-	ol.progress-steps li.next, ol.progress-steps li.next-last
-		background-image: url(../images/step-progress/current-incomplete.gif)
-	/* rights */
-	ol.progress-steps li.last span, ol.progress-steps li.next-last span
-		background-image: url(../images/step-progress/incomplete-right.gif)
-	ol.progress-steps li.current-last span
-		background-image: url(../images/step-progress/current-right.gif)
 	.left
 		float: left
 		width: 310px
 		margin-right: 10px
 	.right
+		margin-top: 30px
 		width: 280px
 		float: left
 		th
 			+sitecolor1
+			font-weight: normal
+			text-transform: uppercase
 	.ssllogo
 		width: 259px
 		height: 164px
@@ -1071,15 +1063,22 @@ div#checkout
 	.title
 		+smallfont
 		+sitecolor2
-	.total
-		+mediumfont
+	.price
+		+smallfont
 		+sitecolor1
+	.total
+		+smallfont
+		+sitecolor1
+	.itemtotal
+		+sitecolor2
+		text-align: right
+		margin-right: 5px
 	.qtyinput
-		width: 35px
-		height: 38px
+		width: 30px
+		height: 30px
 		input
 			width: 22px
-			margin: 11px 0px 0px 6px
+			margin: 11px 0px 0px 0px
 			padding: 0
 			border: 0
 			text-align: center
@@ -1178,20 +1177,20 @@ div#checkout
 	text-align: left
 	.topborder
 		background: url('/images/facebox/ltfaceboxtopborder.png') no-repeat
-		width: 787px
-		height: 39px
+		width: 781px
+		height: 32px
 	.bottomborder
 		background: url('/images/facebox/ltfaceboxbottomborder.png') no-repeat
-		width: 787px
-		height: 28px
+		width: 781px
+		height: 21px
 	.leftborder
 		background: url('/images/facebox/ltfaceboxleftborder.png') no-repeat
-		width: 29px
-		height: 475px
+		width: 22px
+		height: 580px
 	.rightborder
 		background: url('/images/facebox/ltfaceboxrightborder.png') no-repeat
-		width: 16px
-		height: 475px
+		width: 13px
+		height: 580px
 	.close
 		background: url('/images/facebox/ltfaceboxclose.png') no-repeat
 		float: right
@@ -1213,18 +1212,19 @@ div#checkout
 		border-bottom: 0
 		padding: 0
 	.body
-		width: 742px
+		width: 746px
 		background: url('/images/facebox/ltfaceboxbodybg.png') repeat-y
 		+sitefont1
 		+sitecolor2
 	.imagearea
 		width: 400px
-		height: 250px
+		height: 440px
 		margin-right: 10px
 		text-align: center
 		float: left
 	.descriptionarea
 		width: 316px
+		height: 440px
 		float: left
 		.title
 			+largefont
@@ -1249,7 +1249,7 @@ div#checkout
 			float: left
 			font-weight: bold
 			color: #ff66cc
-			margin-top: 5px
+			margin-top: 17px
 		.quantityinput
 			float: left
 			width: 46px
@@ -1270,7 +1270,7 @@ div#checkout
 		background: url('/images/facebox/ltfaceboxdots2.png') no-repeat
 		width: 734px
 		height: 15px
-		margin: 10px 0px 10px 0px
+		margin: 5px 0px 5px 0px
 	.moniker
 		+largefont
 		text-transform: uppercase
@@ -1293,7 +1293,6 @@ div#checkout
 			height: 70px
 			margin-right: 3px
 			float: left
-			border: 1px solid #cccccc
 		.itemtitle
 			width: 95px
 			float: left

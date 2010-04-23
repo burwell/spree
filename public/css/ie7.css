@@ -1,9 +1,8 @@
-#emailarea { clear: both; text-align: left; margin-left: 60px; }
+#footerlinks {text-align: left;}
 
-.innerproducts .row .product .buttonarea .button { width: 56px; height: 48px; background: url('/images/ltaddbutton.png') no-repeat; margin-left: 117px; padding-top: 13px; padding-left: 5px; cursor: pointer; }
-.innerproducts .row .product .buttonarea .button .buttontext { background-color: #ccff99; border: 0; text-align: center; font-family: Georgia; color: #ff66cc; width: 47px; cursor: pointer; margin-left:-117px; font-size:10px;}
+#brands .mysterious { width: 170px; float: left; }
+#brands .tokyomilk { width: 241px; height: 125px; margin-left: 193px; }
 
-#footerlinks { font-size: 10px; color: #999999; font-family: 'Trebuchet MS', Helvetica; margin-left: 110px; margin-top: 20px; text-align: left;}
 
 #facebox { position: absolute; top: 0; left: 0; z-index: 10000; text-align: left; width: 781px; margin-left: 0px;}
 #facebox .moniker { font-size: 14px; text-transform: uppercase; color: #ff66cc; width: 195px; height: 60px; float: right; }

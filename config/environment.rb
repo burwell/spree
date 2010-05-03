@@ -82,6 +82,8 @@ Spree::Initializer.run do |config|
 
 end
 
+Abingo.cache = ActiveSupport::Cache::MemCacheStore.new("127.0.0.1")
+
 Time::DATE_FORMATS[:date_time24] = "%Y-%m-%d %H:%M"
 Time::DATE_FORMATS[:short_date] = "%Y-%m-%d"
 

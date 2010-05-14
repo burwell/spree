@@ -8,6 +8,7 @@ Factory.define(:address) do |record|
   record.phone      { Faker::PhoneNumber.phone_number }
   record.state_name  { Faker::Address.us_state }
   record.alternative_phone { Faker::PhoneNumber.phone_number }
+  record.email      { Faker::Internet.email}
 
   #record.active true
 

@@ -178,13 +178,16 @@ module Spree
     # a billing address when authorizing/voiding a previously captured transaction.  So omits these 
     # options in this case since they aren't necessary.  
     def minimal_gateway_options(payment)
-      {:email    => payment.order.email, 
-       :customer => payment.order.email, 
-       :ip       => payment.order.ip_address, 
-       :order_id => payment.order.number,
-       :shipping => payment.order.ship_total * 100,
-       :tax      => payment.order.tax_total * 100, 
-       :subtotal => payment.order.item_total * 100}  
+      {
+        :email       => payment.order.email,
+        :customer    => payment.order.email,
+        :ip          => payment.order.ip_address,
+        :order_id    => payment.order.number,
+        :description => payment.order.bill_address.try(:full_name),
+        :shipping    => payment.order.ship_total * 100,
+        :tax         => payment.order.tax_total * 100,
+        :subtotal    => payment.order.item_total * 100
+      }
     end
     
     def spree_cc_type

@@ -1,0 +1,20 @@
+--- 
+javascripts: 
+- base: 
+  - prototype
+  - builder
+  - effects
+  - dragdrop
+  - controls
+  - slider
+  - sound
+  - jquery
+  - jquery-ui
+  - jrails
+  - application
+  - facebox
+  - jquery.scrollTo
+  - jquery.livequery
+  - jquery.ba-url.min
+stylesheets: 
+- base: []

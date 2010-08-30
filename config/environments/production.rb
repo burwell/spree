@@ -19,3 +19,12 @@ config.action_controller.perform_caching             = true
 
 # Uncomment the line below if you want to use the gateway in test mode while deployed in production
 #ActiveMerchant::Billing::Base.gateway_mode = :test
+ActionController::Base.asset_host = Proc.new {|source, request|
+  if request.ssl?
+    # don't send SSL requests to asset hosts, or we'll get a certificate warning
+    "#{ request.protocol }#{ request.host_with_port }"
+  else
+    # route to assets0 through assets3
+    "#{ request.protocol }assets#{ source.hash % 4 }.loveandtoast.com"
+  end
+}

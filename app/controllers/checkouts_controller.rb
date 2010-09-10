@@ -68,7 +68,7 @@ class CheckoutsController < Spree::BaseController
   end
 
   def can_access?
-    session[:order_token] ||= params[:order_token]
+    session[:order_token] = params[:order_token] unless params[:order_token].blank?
     parent_object.grant_access?(session[:order_token])
   end
 
